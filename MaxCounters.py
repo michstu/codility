@@ -1,5 +1,7 @@
 def solution(N, A):
     S={}
+    if N == 0:
+        return(-1)
     for i in range(1,N+1):
         S[i] = 0
     for i in A:
@@ -10,4 +12,3 @@ def solution(N, A):
             for i in range(1,N+1):
                 S[i] = a
     return (list(S.values()))
-    
